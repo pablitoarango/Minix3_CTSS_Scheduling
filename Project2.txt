@@ -1,0 +1,87 @@
+Project 2 - Process scheduling
+
+COP 4600 
+Fall 2014
+
+Due: Nov 3, 2014
+
+Brief Description:
+Modify the Minix Scheduling algorithm for user processes to simulate CTSS. 
+Processes will enter at the highest user priority with a 1 ms time quantum. 
+If a user process runs out of time in any queue, it is inserted in the next
+lower priority queue unless it is in the next to lowest priority queue (the
+lowest priority queue is reserved for the idle process). 
+Each lower queue will have twice the time quantum of the queue one priority 
+level above it (i.e., the highest user queue will have a quantum of 1 ms, the
+next lower queue will have a quantum of 2 ms, the next will have 4 ms, etc.).
+
+Deliverables:
+You will 
+1) Submit modified code, including makefiles if necessary
+2) Demonstrate and explain the modified system to a TA or grader
+3) Submit a project report describing your changes, reflecting on what you
+	learned, and documenting the way you tested the modified system.
+	Report MUST be in PDF format; other formats will result in 
+	deduction of points. 
+4) Submit any programs/scripts used to test your modified system
+
+Submit modified code and report on Sakai as a tarfile or the equivalent
+
+Comments in the code itself (1) are required as well as explanation to the 
+TA (2) and in the report (3). 
+Code comments MUST include the following line above every modified code
+block; failure to do so will result in point deductions.
+/* PROJECT 2 MODIFICATION */
+This allows the grader to find modification easily.
+
+Modified code (1) includes exactly the Minix3 source files you modified 
+(i.e., all of them and none you did not modify), as well as any modified 
+makefiles. 
+You will explain how the programs/scripts (4) allow you to test your changes,
+and will include this in the report (3).
+Use tar(1) to create a tarfile with the required files to submit, and 
+upload this on Sakai. 
+
+The TAs will provide a Doodle poll for you to sign up for a demonstration
+slot - the location will be CSE-309 unless otherwise noted. Be there early
+for your demo.
+
+Documentation:
+In addition to the modified source code and makefile(s), you will provide 
+the following document:
+Report (in PDF format) - this document will explain how you modified the 
+    existing code base to produce the required changes, including what 
+    changes were made to which files and why each change was made.  Files 
+    will first be referenced by their full path names, but local names
+    may be used after that providing they are not ambiguous.
+    It will include description of how testing was performed along with any 
+    known bugs.
+    The report will also include a section reflecting on what you learned 
+    from this project, what challenged you the most, and how you dealt with
+    the challenge(s). 
+    Note that the report is not intended to be more than a few pages long, 
+    and it can include pictures/screen captures/etc. as appropriate. The key 
+    is to convey how this part of the system works and how you modified it to
+    work differently. 
+    There are many free converters that can produce PDF documents from various
+    other formats - if you can't produce PDF with the applications you have,
+    then use one of these web-based converters.
+
+Submission:
+You will tar all modified source code files from Minix3, along with the 
+documentation, new source code files for the program and its makefile, using 
+the tar facility.  The tarball will unpack in the current directory.
+
+Demonstration:
+You will sign up to demonstrate your code the the TA online in a doodle poll
+provided via announcement later.
+You will have 10 minutes to demo and to answer questions, so be prepared by 
+bringing your laptop with the demonstration ready.  
+Do not be late for your demo. Missed demo appointments will deduct 5 points 
+from your score for each missed appointment (defined as 5 or more minutes 
+late). 
+
+Helpful resources:
+The Minix3.org website has many helpful documents, and we will add documents 
+to the class website of a more specific nature.  
+
