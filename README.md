@@ -1,13 +1,12 @@
 Minix3 CTSS Scheduling
 ======================
- OS Project
-
-
-####Process Scheduling
+ *OS Project*
 
 FOR MORE INFORMATION ON PROJECT REQUIREMENTS REFER TO Project2.txt
 
 FOR MORE INFORMATION ON SOLUTION REFER TO Report.pdf
+
+###Process Scheduling
 
 ####Lessons from this Project
 
